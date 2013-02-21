@@ -1,0 +1,25 @@
+authors:
+- author1
+- author2
+created: '2013-02-21'
+description: DescriptionHere
+keywords:
+- key1
+- key2
+notes: NotesHere
+regex: RegExStringHere
+sampleMatches:
+- sample1
+- sample2
+sampleNonMatches:
+- sample1
+- sample2
+testResults:
+- result1
+- result2
+- result3
+testString: Sample string.
+title: TitleHere
+updated: '2013-02-21'
+uuid: 3f1b5bd7-64b6-4990-9519-7eab11be7e08
+version: VersionHere
