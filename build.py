@@ -12,12 +12,8 @@ mdString += 'Compiled: ' + str(today) + '  \n\n'
 mdString += '---' + '  \n'
 
 for regexDoc in files:
-	#yaml.load
 	yamlFile = open(regexDoc, 'r')
 	docData = yaml.load (yamlFile.read())
-	#print repoDoc
-	#print yaml.dump(docData, default_flow_style=False)
-
 	mdString += '## ' + docData['title'] + '  \n'
 	mdString += '    ' + docData['regex'] + '  \n' # Print as code in markdown
 	mdString += '### Description' + '  \n'
@@ -26,7 +22,6 @@ for regexDoc in files:
 	mdString += 'Authors: ' + str(docData['authors']) + '  \n\n'
 	mdString += '---' + '  \n'
 
-print mdString
 f = open('./docs/repo-contents.md', 'w+')
 f.write(mdString)
 f.close()

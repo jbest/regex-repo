@@ -8,8 +8,6 @@ as [uuid].yaml and stored in the ./regex directory.
 """
 regexUUID = uuid.uuid4()
 today = datetime.date.today()
-#TODO Use an external template file instead of data in code. 
-#templateData = {'title': "titleHere",'uuid': str(regexUUID), 'description': "DescriptionHere"}
 templateData = {'regex': 'RegExStringHere', 'updated': str(today), 
 'description': 'DescriptionHere', 'title': 'TitleHere', 'notes': 'NotesHere', 
 'created': str(today), 'sampleNonMatches': ['sample1', 'sample2'], 
