@@ -8,7 +8,7 @@ Compiled: 2013-02-21
 ### Description  
 This is just a sample description of a regex that I have not made.  
 UUID:3b922789-f92f-4646-8985-d34b6a390636  
-File:./regex/3b922789-f92f-4646-8985-d34b6a390636.yaml  
+File:[./regex/3b922789-f92f-4646-8985-d34b6a390636.yaml](../regex/3b922789-f92f-4646-8985-d34b6a390636.yaml)  
 Keywords: ['sample', 'testing']  
 Authors: ['Jason Best - jbest@brit.org']  
 
