@@ -18,7 +18,7 @@ for regexDoc in files:
 	mdString += '    ' + docData['regex'] + '  \n' # Print as code in markdown
 	mdString += '### Description' + '  \n'
 	mdString += docData['description'] + '  \n\n'
-	mdString += 'UUID:' + docData['uuid'] + '  \n'
+	mdString += 'UUID: ' + docData['uuid'] + '  \n'
 	mdString += 'File: [' + regexDoc + '](.' + regexDoc + ')  \n'
 	mdString += 'Keywords: ' + str(docData['keywords']) + '  \n'
 	mdString += 'Authors: ' + str(docData['authors']) + '  \n\n'
