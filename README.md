@@ -7,6 +7,9 @@ My goal is to create a repository of regular expressions that are focused on par
 
 This project is in a very early stage and will rely on the contributions of regexperts (hello iDigBio Hackathoners).
 
+[Here](/docs/repo-contents.md) is a sample of how the contents of the repository might be displayed. This document is generated in the build and test process (see below).
+
+
 ## RegEx Documents 
 Each regular expression has a YAML-formatted document in the ./regex directory. Below is a sample of the document contents.
 
