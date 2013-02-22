@@ -19,7 +19,7 @@ testResults:
 - '12-01-1990'
 - '00-00-0000'
 testString: Sample string with a date 12 - 12 - 1990. It might also match 12/1/1990 and 12-01-1990. Should not match Jan 12, 1990.
-title: TitleHere
-updated: '2013-02-21'
+title: Failing sample regex
+updated: '2013-02-22'
 uuid: 3f1b5bd7-64b6-4990-9519-7eab11be7e08
 version: VersionHere

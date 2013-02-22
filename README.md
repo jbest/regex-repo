@@ -10,7 +10,7 @@ This project is in a very early stage and will rely on the contributions of rege
 [Here](/docs/repo-contents.md) is a sample of how the contents of the repository might be displayed. This document is generated in the build and test process (see below).
 
 ### Requirements for building and testing
-Python - http://www.python.org
+Python - http://www.python.org  
 PyYAML - http://pyyaml.org
 
 ## RegEx Documents 
@@ -43,7 +43,10 @@ Each regular expression has a YAML-formatted document in the ./regex directory. 
     version: VersionHere
 
 ## Build 
-The [build.py](build.py) script reads all the regex documents in the ./regex directory and writes a summary of each into [./docs/repo-contents.md](/docs/repo-contents.md). Eventually other documents will be created to list regexes by keyword, etc. The critical testing process has not been written yet, but that is next.
+The [build.py](build.py) script reads all the regex documents in the ./regex directory and writes a summary of each into [./docs/repo-contents.md](/docs/repo-contents.md). Eventually other documents will be created to list regexes by keyword, etc.
+
+## Test 
+The [test.py](test.py) script reads all the regex documents in the ./regex directory and compares test results with actual results. This script needs to be refined so each component of the captured regex group is compared, not just the group as a whole.
 
 ## Make Template 
 The [make-template.py](make-template.py) script will create a YAML-formatted document in the ./regex directory with boilerplate keys and values as well as a datestamp. The script generates a UUID for naming the file.
