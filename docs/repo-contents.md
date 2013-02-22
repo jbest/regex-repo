@@ -11,10 +11,10 @@ A very simple expression to match dates.
 UUID: 3b922789-f92f-4646-8985-d34b6a390636  
 File: [./regex/3b922789-f92f-4646-8985-d34b6a390636.yaml](../regex/3b922789-f92f-4646-8985-d34b6a390636.yaml)  
 Keywords: ['sample', 'testing']  
-Authors: ['Jason Best - jbest@brit.org']  
+Authors: ['Jason Best - jbest at brit dot org']  
 
 ---  
-## TitleHere  
+## Failing sample regex  
     (\d?\d)\W+(\d?\d)\W+(\d\d\d\d)  
 ### Description  
 This regex should fail the test.  
