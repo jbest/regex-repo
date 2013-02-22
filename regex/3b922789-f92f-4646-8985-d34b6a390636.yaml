@@ -1,12 +1,12 @@
 authors:
 - Jason Best - jbest@brit.org
 created: '2013-02-21'
-description: This is just a sample description of a regex that I have not made.
+description: A very simple expression to match dates.
 keywords:
 - sample
 - testing
 notes: This is for testing purposes only.
-regex: '(.*)(\w+)\W+(\d?\d)\W+(\d\d\d\d)(.*)'
+regex: '(\d?\d)\W+(\d?\d)\W+(\d\d\d\d)'
 sampleMatches:
 - sample1
 - sample2
@@ -14,10 +14,10 @@ sampleNonMatches:
 - sample1
 - sample2
 testResults:
-- result1
-- result2
-- result3
-testString: Sample string.
+- '12 - 12 - 1990'
+- '12/1/1990'
+- '12-01-1990'
+testString: Sample string with a date 12 - 12 - 1990. It might also match 12/1/1990 and 12-01-1990. Should not match Jan 12, 1990.
 title: Sample Title - Simple Date Pattern
 updated: '2013-02-21'
 uuid: 3b922789-f92f-4646-8985-d34b6a390636
