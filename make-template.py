@@ -12,6 +12,7 @@ templateData = {'regex': 'RegExStringHere', 'updated': str(today),
 'description': 'DescriptionHere', 'title': 'TitleHere', 'notes': 'NotesHere', 
 'created': str(today), 'sampleNonMatches': ['sample1', 'sample2'], 
 'testString': 'Sample string.', 'version': 'VersionHere', 'testResults': ['result1', 'result2', 'result3'], 
+'testSubgroupResults': ['subresult1', 'subresult2', 'subresult3'],
 'authors': ['author1', 'author2'], 'keywords': ['key1', 'key2'], 'sampleMatches': ['sample1', 'sample2'],
  'uuid':  str(regexUUID)}
 templateString = yaml.dump(templateData, default_flow_style=False)

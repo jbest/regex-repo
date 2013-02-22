@@ -17,6 +17,7 @@ testResults:
 - '12 - 12 - 1990'
 - '12/1/1990'
 - '12-01-1990'
+testSubgroupResults: ['12', '12', '1990', '12', '1', '1990', '12', '01', '1990']
 testString: Sample string with a date 12 - 12 - 1990. It might also match 12/1/1990 and 12-01-1990. Should not match Jan 12, 1990.
 title: Sample Title - Simple Date Pattern
 updated: '2013-02-21'

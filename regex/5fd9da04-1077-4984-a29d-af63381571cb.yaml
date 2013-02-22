@@ -18,6 +18,7 @@ testResults:
 - result1
 - result2
 - result3
+testSubgroupResults: ['test']
 testString: Sample string.
 title: TitleHere
 updated: '2013-02-21'

@@ -3,6 +3,8 @@ import yaml
 import datetime
 import re
 
+#TODO Write test log in markdown and CSV
+
 files = glob.glob('./regex/*.yaml')
 today = datetime.date.today()
 startTime = datetime.datetime.now()
@@ -14,25 +16,33 @@ for regexDoc in files:
 
 	regexString =  docData['regex']
 	expectedResults = docData['testResults']
+	expectedSubgroupResults = docData['testSubgroupResults']
 	p = re.compile(regexString)
 	iterator = p.finditer(docData['testString'])
+	subgroupCount = regexString.count('(')
 	actualResults = []
+	actualSubgroupResults = []
 	for match in iterator:
 		if match:
 			actualResults.append(match.group())
+			for subgroup in range(1,subgroupCount + 1):
+				actualSubgroupResults.append(match.group(subgroup))
 
 	print 'Testing regex in:', regexDoc
-	#print docData['testString']
 	
-	if expectedResults == actualResults:
+	if expectedResults == actualResults and expectedSubgroupResults == actualSubgroupResults:
 		print 'Test passed.'
 	else:
 		failCount += 1
 		print 'FAIL'
-		print 'Expected:'
+		print 'Expected matches:'
 		print expectedResults
-		print 'Actual:'
+		print 'Actual matches:'
 		print actualResults
+		print 'Expected subgroup matches:'
+		print expectedSubgroupResults
+		print 'Actual subgroup matches:'
+		print actualSubgroupResults
 
 testTime = datetime.datetime.now() - startTime
 print 'Test complete.'

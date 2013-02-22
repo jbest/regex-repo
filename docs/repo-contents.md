@@ -30,6 +30,17 @@ Authors: ['Jason Best']
 ### Description  
 DescriptionHere  
 
+UUID: 53391777-5713-4dff-85ee-2b89f8ca8cbd  
+File: [./regex/53391777-5713-4dff-85ee-2b89f8ca8cbd.yaml](../regex/53391777-5713-4dff-85ee-2b89f8ca8cbd.yaml)  
+Keywords: ['key1', 'key2']  
+Authors: ['author1', 'author2']  
+
+---  
+## TitleHere  
+    RegExStringHere  
+### Description  
+DescriptionHere  
+
 UUID: 5fd9da04-1077-4984-a29d-af63381571cb  
 File: [./regex/5fd9da04-1077-4984-a29d-af63381571cb.yaml](../regex/5fd9da04-1077-4984-a29d-af63381571cb.yaml)  
 Keywords: ['key1', 'key2']  
